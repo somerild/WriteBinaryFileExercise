@@ -18,7 +18,7 @@ public class Main {
         for(int i = 0; i < 4; i++)
         {
             output.writeInt( productNum[i] );
-            output.writeChars(productName[i] );
+            output.writeUTF(productName[i] );
             output.writeInt( productQty[i] );
             output.writeDouble( productCost[i] );
         }

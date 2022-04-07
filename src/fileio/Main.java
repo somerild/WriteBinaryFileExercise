@@ -11,8 +11,8 @@ public class Main {
         String[] productName = {"Hammer", "Lawn Mower", "Monkey Wrench", "Screwdriver"};
         double[] productCost = {12.99, 79.52, 6.95, 5.99};
 
-        String sourcePath = "C:\\Users\\leram\\Java\\WriteBinaryFileExercise\\src\\fileio\\products.dat";
-        File fOut = new File(sourcePath);
+        String destinationPath = "C:\\Users\\leram\\Java\\WriteBinaryFileExercise\\src\\fileio\\products.dat";
+        File fOut = new File(destinationPath);
         DataOutputStream output = new DataOutputStream( new BufferedOutputStream( new FileOutputStream( fOut ) ) );
 
         for(int i = 0; i < 4; i++)
